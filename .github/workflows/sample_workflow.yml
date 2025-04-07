@@ -1,0 +1,13 @@
+name: running thw sample workflow
+run-name: Running your first github action
+on:
+ push:
+  branches:
+   - "feature/**"
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - name: "first step"
+     run: echo ${{ github.actor }}
+   
