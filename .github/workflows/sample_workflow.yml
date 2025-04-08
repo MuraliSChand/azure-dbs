@@ -18,5 +18,11 @@ jobs:
        node-version: 14.x
    - name: "final step"
      run: echo "build completed"
+ release:
+  runs-on: ubuntu-latest
+  steps:
+   - name: "the release step"
+     run: echo Hi Murali this is the release step succeeded
+
  
    
